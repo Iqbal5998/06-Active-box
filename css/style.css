@@ -1,0 +1,397 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	scroll-behavior: smooth;
+
+}
+
+ul,ol{
+	list-style: none;
+}
+a:hover,
+a{
+	text-decoration: none;
+}
+.container{
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+body{
+	
+	font-family: 'Miniver', cursive;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
+
+}
+
+
+/*navbar css part start here*/
+.navbar{
+	height: 80px;
+	/*background:#333;*/
+	line-height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+.navbar-nav .nav-item .nav-link{
+	color: #fff;
+	padding: 0 15px;
+	font-size: 18px;
+	transition: all linear .3s;
+
+}
+.navbar-nav .nav-item.active .nav-link{
+	/*color: #0872b9;*/
+	
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+	/*color: #fff;*/
+	transition: all linear .3s;
+	
+}
+
+/*navbar css part end here*/
+
+/*banner part html start here*/
+
+#banner_section{
+	background-image: url(../img/02-ActiveBox.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+.banner_overlay{
+	padding: 150px 0;
+	background-color: rgba(0,0,0, .1);
+}
+.bnr_heng{
+	text-transform: uppercase;
+	padding-bottom: 32px;
+	padding-top: 10px;
+}
+
+.bnr-content{
+	text-align: justify;
+	text-align: center;
+	color: #fff;
+}
+.bnr-content p{
+	font-size: 24px;
+	padding-bottom: 30px;
+
+}
+.btn{
+	font-size: 16px;
+	padding: 16px 20px;
+	/*border-radius: 5px;*/
+	color: #fff;
+	background:#e84545;
+	width: 200px;
+	text-transform: uppercase;
+	transition: all linear 0.3s;
+}
+.btn:hover{
+	background:#fff;
+	color: #000;
+}
+
+
+/*banner part html end here*/
+
+
+/*icon part css  start here*/
+.icon_first{
+	padding-top: 120px;
+}
+.icon_first img{
+	padding-bottom: 34px;
+}
+.icon_first p{
+	text-align: justify;
+}
+.icon_heading h3{
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.p_heading p{
+	
+	text-align: center;
+    line-height: 30px;
+	
+}
+
+/*icon part css end here*/
+/*protfolio css part start here*/
+
+#protfolio{
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+.pott_img{
+	position: relative;
+	margin-bottom: 10px;
+
+}
+
+.port_overlay{
+	position: absolute;
+	top: 7px;
+    left: 7px;
+    height: 96%;
+    width: 97%;
+	background-color: rgba(218, 7, 7, 0.60);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+	/*opacity: 0;*/
+	transition: all linear .3s;
+
+
+}
+
+.port_img:hover .port_overlay{
+	transform: scale(1);
+	/*opacity: 1;*/
+	transition: all linear .3s;
+}
+
+.port_overlay h3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border-radius: 50%;*/
+	color: #fff;
+
+}
+.port_overlay p{
+	
+	/*border-radius: 50%;*/
+	color: #fff;
+
+}
+
+
+
+/*protfolio css part end here*/
+
+/*gallery section css start part here */
+
+
+
+/*gallery section css end part here */
+
+/*employ css part start here*/
+
+#employ_section{
+	padding-top: 100px;
+}
+.client_content{
+	
+}
+.client_content h3{
+	
+	padding-top: 32px;
+}
+.client_content h5{
+	
+	padding-top: 16px;
+	padding-bottom: 32px;
+}
+.client_content p{
+	text-align: justify;
+}
+
+.employ_icon ul{
+	float: left;
+}
+.employ_icon ul li{
+	float: left;
+	padding: 0 4px;
+	
+}
+.employ_icon ul li a{
+	color: #c6cacc;
+	border: 1px solid #e8ecee;
+	padding: 10px 16px;
+	transition: all linear .3s;
+	
+}
+.employ_icon ul li a:hover{
+	background-color: rgba(218, 7, 7, 0.60);
+	transition: all linear .3s;
+	color: #000;	
+}
+
+/*employ css part end here*/
+/*about us part css start here*/
+#about_section{
+	margin: 100px 0;
+	background-color: #53354a;
+}
+.about_slider h2{
+	/*padding-left: 80px;*/
+	color: #fff;
+	padding-top: 120px
+}
+.about_slider p{
+	padding: 20px 80px;
+	color: #fff;
+	margin-bottom: 8rem;
+}
+
+/*carousal css start here*/
+.carousel-indicators li{
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    margin-bottom: 105px;
+}
+
+.carousel-indicators li:hover{
+	color: rgba(218, 7, 7, 0.60);
+	/*cursor: pointer;*/
+	background-color: rgba(218, 7, 7, 0.60);
+}
+/*carousal css end here*/
+/*about us part css start here*/
+
+/*download css part start here*/
+.download_content h3{
+	color: #454749;
+}
+.download_content p{
+	padding-bottom: 40px;
+	padding-top: 24px;
+}
+
+
+.btn{
+	font-size: 16px;
+	padding: 16px 20px;
+	/*border-radius: 5px;*/
+	color: #fff;
+	background:#e84545;
+	width: 288px;
+	text-transform: uppercase;
+	transition: all linear 0.3s;
+	display: inline-block;
+}
+.btn:hover{
+	background-color: rgba(218, 7, 7, 0.60);
+	color: #000;
+}
+
+/*download css part end here*/
+/*footer part css start here */
+#footer_section{
+	background-color: #3a3e64;
+	height: 250px;
+	margin-top: 100px;
+	color: #fff;
+}
+.footer_content h2{
+	padding-top: 70px;
+	text-transform: uppercase;
+}
+.footer_content p{
+	padding-top: 25px;
+	text-align: justify-all;
+}
+.icon{
+	margin: 0 150px;
+}
+
+.footer_icon ul{
+	float: left;
+}
+.footer_icon ul li{
+	float: left;
+	padding: 0 4px;
+	padding-top: 25px;
+	
+}
+.footer_icon ul li a{
+	color: #c6cacc;
+	border: 1px solid #e8ecee;
+	padding: 10px 16px;
+	transition: all linear .3s;
+
+	
+}
+.footer_icon ul li a:hover{
+	background-color: rgba(218, 7, 7, 0.60);
+	transition: all linear .3s;
+	color: #000;	
+}
+
+/*footer part css start here */
+#footer_extra{
+
+	background-color: #313454;
+	height: 100px;
+	width: 100%;
+	color: #fff;
+}
+.extra_content{
+	padding-top: 32px;
+	/*text-align: justify-all;*/
+}
+.extra_content i{
+	color: red;
+}
+
+
+/*footer extra html start here*/
+
+
+
+
+
+
+
+
+
+
+/*footer extra html end here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
